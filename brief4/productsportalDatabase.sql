@@ -14,6 +14,7 @@ INSERT INTO Client (ClientName, ClientEmail, ClientPassword) VALUES ('Kaitlyn', 
 INSERT INTO Client (ClientName, ClientEmail, ClientPassword) VALUES ('Wynn', 'wrosenfelt7@geocities.com', '6o6WVhtlDnnq');
 INSERT INTO Client (ClientName, ClientEmail, ClientPassword) VALUES ('Drucy', 'dgarthland8@tripadvisor.com', '1qaR9Om56');
 INSERT INTO Client (ClientName, ClientEmail, ClientPassword) VALUES ('Casar', 'ccoltart9@biblegateway.com', 't54QuwavFUK');
+
 create table Admin (
 	AdminID BIGSERIAL NOT NULL PRIMARY KEY,
 	AdminName VARCHAR(50) NOT NULL,
@@ -52,6 +53,7 @@ INSERT INTO Product (ProductName, ProductPrice, Stock,AdminID) VALUES ('Table Cl
 INSERT INTO Product (ProductName, ProductPrice, Stock,AdminID) VALUES ('Bread - French Baquette', '$138.88', 89,4);
 
 create table Vote (
+    VoteID BIGSERIAL NOT NULL PRIMARY KEY,
 	VoteNbr INT NOT NULL,
 	DateOfVote DATE NOT NULL,
     productid int,
